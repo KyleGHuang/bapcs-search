@@ -7,14 +7,20 @@ export default function Home() {
       <head>
         <title>BAPCS Search</title>
       </head>
-      <div className="w-screen h-screen flex flex-col justify-start items-center bg-white space-y-10 text-white">
+      <div className="w-screen h-screen flex flex-col justify-start items-center bg-blue-600 space-y-10 text-black">
         <Navbar></Navbar>
-        <div className="w-4/6 border border-black/10 shadow-lg p-6 flex flex-col justify-start items-center bg-blue-600 space-y-10">
+        <div className="w-4/6 border border-black/10 shadow-2xl p-6 flex flex-col justify-start items-center space-y-10 bg-white">
           <p className="text-xl">
             Click on a component to check the latest deals.
           </p>
-          <FlairGrid></FlairGrid>
+          <div className="w-full text-white">
+            <FlairGrid></FlairGrid>
+          </div>
         </div>
+        <div
+          id="result"
+          className="w-4/6 h-full flex flex-col justify-start items-center space-y-5"
+        ></div>
       </div>
     </html>
   );
